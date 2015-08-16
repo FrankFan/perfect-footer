@@ -8,15 +8,18 @@
 
 		html,body {
 			height: 100%;
+			margin: 0;
 		}
 		.container {
 			min-height: 100%;
 			position: relative;
+			width: 100%;
 		}
 
 		.content {
 			font-size: 14px;
 			background-color: #FAEBD7;
+			padding-bottom: 60px; /* 要和 footer 的高度一致 */
 		}
 	
 		.content p {
@@ -28,8 +31,6 @@
 			position: absolute;
 			bottom: 0;
 			background-color: #999;
-			
-			
 			width: 100%;
 		}
 
@@ -39,9 +40,29 @@
 			text-align: center;
 			line-height: 18px;
 		}
+
+		.btn {
+			position: absolute;
+			right: 0;
+			top: 100px;
+			z-index: 1;
+			padding: 20px;
+			background-color: #999;
+			color: #fff;
+		}
 	</style>
+	<script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script>
+	<script>
+	$(function() {
+		$('.btn').on('click', function() {
+			$('.content').append('<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In libero itaque omnis, incidunt ut natus aperiam voluptatem non eius nisi ex deleniti minus, repudiandae tempore facilis ab dolorem iure consectetur.</p>')
+		});
+	});
+	</script>
 </head>
 <body>
+
+<span class="btn">增加高度</span>
 	<div class="container">
 		<div class="content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus recusandae eum, ea assumenda aspernatur veniam! Repudiandae deserunt quo harum eius officia dicta ut asperiores quia. Cupiditate architecto, odit ullam molestiae!</p>
