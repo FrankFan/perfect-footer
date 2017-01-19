@@ -5,7 +5,7 @@
 - 页面内容多footer在页面底部
 
 
-![](http://images2015.cnblogs.com/blog/282019/201701/282019-20170119165954250-153719763.jpg)
+![](./sticky-footer.png)
 
 
 
